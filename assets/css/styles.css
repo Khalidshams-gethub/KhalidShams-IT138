@@ -274,11 +274,22 @@ img {
   display: grid;
   place-items: center;
   position: relative;
+  appearance: none;
+  padding: 0;
+  cursor: pointer;
+  color: inherit;
   border: 2px solid rgba(237, 247, 250, 0.7);
   border-radius: 50%;
   background: linear-gradient(145deg, rgba(7, 16, 22, 0.94), rgba(26, 55, 65, 0.94));
   box-shadow: 0 20px 80px rgba(66, 217, 232, 0.2);
   overflow: hidden;
+  transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.profile-photo:hover {
+  transform: translateY(-2px);
+  border-color: var(--cyan);
+  box-shadow: 0 24px 90px rgba(66, 217, 232, 0.32);
 }
 
 .profile-photo img {
@@ -295,6 +306,37 @@ img {
   font-size: 3.4rem;
   font-weight: 800;
   color: var(--cyan);
+}
+
+.profile-photo small {
+  position: absolute;
+  left: 18px;
+  right: 18px;
+  bottom: 18px;
+  padding: 7px 8px;
+  border-radius: var(--radius);
+  background: rgba(3, 10, 14, 0.78);
+  color: var(--text);
+  font-size: 0.72rem;
+  font-weight: 800;
+  line-height: 1.2;
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity 180ms ease, transform 180ms ease;
+}
+
+.profile-photo:hover small,
+.profile-photo:focus-visible small {
+  opacity: 1;
+  transform: none;
+}
+
+.profile-upload {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
 }
 
 .terminal-card {

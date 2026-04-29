@@ -72,10 +72,12 @@
 
         <div class="hero-panel reveal" aria-label="Profile summary">
           <div class="profile-orbit">
-            <div class="profile-photo" aria-label="Profile photo placeholder">
-              <img src="assets/img/profile.jpg" alt="Khalid Shams profile photo" onerror="this.hidden=true">
-              <span>KS</span>
-            </div>
+            <button class="profile-photo" type="button" aria-label="Upload or change profile photo">
+              <img id="profileImage" src="assets/img/profile.jpg" alt="Khalid Shams profile photo" onerror="this.hidden=true">
+              <span id="profileInitials">KS</span>
+              <small>Click to upload photo</small>
+            </button>
+            <input id="profileUpload" class="profile-upload" type="file" accept="image/*" aria-label="Choose profile photo">
           </div>
           <div class="terminal-card">
             <div class="terminal-bar">

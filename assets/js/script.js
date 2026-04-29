@@ -6,8 +6,44 @@ const revealItems = [...document.querySelectorAll(".reveal")];
 const filterButtons = [...document.querySelectorAll(".filter-button")];
 const blogCards = [...document.querySelectorAll(".blog-grid .content-card")];
 const contactForm = document.querySelector(".contact-form");
+const profilePhoto = document.querySelector(".profile-photo");
+const profileUpload = document.getElementById("profileUpload");
+const profileImage = document.getElementById("profileImage");
+const profileInitials = document.getElementById("profileInitials");
+const savedProfilePhoto = localStorage.getItem("khalid-profile-photo");
 
 document.getElementById("year").textContent = new Date().getFullYear();
+
+if (savedProfilePhoto && profileImage) {
+  profileImage.src = savedProfilePhoto;
+  profileImage.hidden = false;
+  profileInitials.hidden = true;
+}
+
+profileImage?.addEventListener("load", () => {
+  if (!profileImage.hidden) {
+    profileInitials.hidden = true;
+  }
+});
+
+profilePhoto?.addEventListener("click", () => {
+  profileUpload?.click();
+});
+
+profileUpload?.addEventListener("change", () => {
+  const [file] = profileUpload.files;
+
+  if (!file || !file.type.startsWith("image/")) return;
+
+  const reader = new FileReader();
+  reader.addEventListener("load", () => {
+    profileImage.src = reader.result;
+    profileImage.hidden = false;
+    profileInitials.hidden = true;
+    localStorage.setItem("khalid-profile-photo", reader.result);
+  });
+  reader.readAsDataURL(file);
+});
 
 navToggle?.addEventListener("click", () => {
   const isOpen = navLinks.classList.toggle("open");
