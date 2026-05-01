@@ -8,7 +8,7 @@ The site is intentionally simple and professional for IT138 and future IT/cybers
 
 - Home
 - Learning Blog
-- Problems Solved
+- Job Experience
 - Projects & Certifications
 - Resume & Contact
 

@@ -342,6 +342,20 @@ p {
   transition: transform 180ms ease, border-color 180ms ease;
 }
 
+.experience-panel {
+  margin-top: 18px;
+}
+
+.experience-meta {
+  margin-top: 0;
+  color: #d7e3ec;
+  font-weight: 800;
+}
+
+.compact-list {
+  margin-top: 16px;
+}
+
 .panel:hover,
 .post-card:hover,
 .problem-item:hover,
@@ -479,7 +493,7 @@ p {
   transition: transform 180ms ease, border-color 180ms ease;
 }
 
-.contact-links span {
+.contact-links a > span:first-child {
   width: 34px;
   height: 34px;
   display: inline-grid;
@@ -488,6 +502,18 @@ p {
   background: var(--accent);
   color: #061018;
   font-weight: 900;
+}
+
+.contact-links a > span:last-child {
+  display: grid;
+  gap: 2px;
+}
+
+.contact-links small {
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 600;
+  overflow-wrap: anywhere;
 }
 
 .site-footer {

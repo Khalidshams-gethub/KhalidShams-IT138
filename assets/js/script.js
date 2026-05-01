@@ -8,6 +8,7 @@ const blogCards = [...document.querySelectorAll(".blog-grid .post-card")];
 const profileImage = document.getElementById("profileImage");
 const profileInitials = document.getElementById("profileInitials");
 const githubProjects = document.getElementById("githubProjects");
+const emailLink = document.getElementById("emailLink");
 const githubReposUrl = "https://api.github.com/users/khalidshams-tech/repos";
 
 document.getElementById("year").textContent = new Date().getFullYear();
@@ -74,6 +75,11 @@ filterButtons.forEach((button) => {
       card.hidden = filter !== "all" && card.dataset.category !== filter;
     });
   });
+});
+
+emailLink?.addEventListener("click", (event) => {
+  event.preventDefault();
+  window.location.assign(emailLink.href);
 });
 
 const formatDate = (value) =>
