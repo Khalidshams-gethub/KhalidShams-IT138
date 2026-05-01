@@ -1,104 +1,137 @@
 # Khalid Shams Technical Blog and Portfolio
 
-A professional GitHub Pages portfolio website for Khalid Shams, focused on IT support, cybersecurity studies, cloud computing, Linux, networking, Python, and technical troubleshooting.
+This is a GitHub Pages-ready personal technical blog and portfolio website for Khalid Shams.
 
-Live site: https://khalidshams-tech.github.io/blogIT138/
+The site is intentionally simple and professional for IT138 and future IT/cybersecurity career use.
 
-## Project Description
+## Main Sections
 
-This website is the central hub for my technical portfolio. It presents my background, learning goals, technical blog notes, troubleshooting examples, projects, certifications, resume information, and contact links. The goal is to make my GitHub profile easier to understand for employers, instructors, recruiters, and professional connections.
-
-## Technologies Used
-
-- HTML5
-- CSS3
-- JavaScript
-- GitHub Pages
-- Git and GitHub
-- Responsive web design
-
-## Features
-
-- Personal landing page for IT and cybersecurity career growth
-- Sections for biography, blog posts, challenges, projects, trends, resume, certifications, and contact
-- GitHub Pages deployment
-- Responsive layout for desktop and mobile screens
-- Links to GitHub, LinkedIn, email, and resume content
-- Project summaries that connect class work to career skills
+- Home
+- Learning Blog
+- Problems Solved
+- Projects & Certifications
+- Resume & Contact
 
 ## File Structure
 
 ```text
 blogIT138/
 +-- index.html
-+-- resume.html
 +-- README.md
++-- resume.html
 +-- assets/
     +-- css/
     |   +-- styles.css
     +-- js/
     |   +-- script.js
+    +-- images/
+    |   +-- profile.jpg
     +-- img/
         +-- design-concept.png
 ```
 
-## Setup and Deployment
+## GitHub Pages Deployment
 
-1. Clone the repository:
+1. Push this folder to your GitHub repository.
+2. In the repository, open **Settings**.
+3. Go to **Pages**.
+4. Under **Build and deployment**, choose **Deploy from a branch**.
+5. Select the `main` branch and the root folder.
+6. Save and wait for GitHub Pages to publish the site.
 
-```bash
-git clone https://github.com/khalidshams-tech/blogIT138.git
+## Add or Update Your Profile Photo
+
+Save your profile picture here:
+
+```text
+blogIT138/assets/images/profile.jpg
 ```
 
-2. Open the project folder:
+If `profile.jpg` is missing, the website automatically shows a circle placeholder with `KS`.
 
-```bash
-cd blogIT138
+PowerShell example:
+
+```powershell
+Copy-Item "C:\Users\khliadshams\Pictures\my-photo.jpg" "D:\College\Codex Projects\IT138\blogIT138\assets\images\profile.jpg"
+git add assets/images/profile.jpg
+git commit -m "Add profile photo"
+git push
 ```
 
-3. Open `index.html` in a browser to preview locally.
+## Add a New Blog Post
 
-4. To publish with GitHub Pages:
-   - Open the repository on GitHub.
-   - Go to **Settings > Pages**.
-   - Choose **Deploy from a branch**.
-   - Select the `main` branch and root folder.
-   - Save and wait for GitHub Pages to publish the site.
+Open `index.html` and search for:
 
-## Screenshots
-
-Add screenshots here showing:
-
-- Home page
-- Projects section
-- Resume page
-- Mobile view
-
-Example:
-
-```markdown
-![Portfolio homepage](assets/img/portfolio-homepage.png)
+```text
+Learning Blog
 ```
 
-## What I Learned
+Copy one existing `<article class="post-card">` block and update:
 
-- How to structure a professional portfolio website
-- How to publish a static site using GitHub Pages
-- How to organize technical work for a career-focused audience
-- How to write clearer project summaries and learning reflections
-- How to connect IT, cloud, Linux, and cybersecurity learning into one portfolio
+- Category: `linux`, `networking`, `cloud`, `cybersecurity`, or `troubleshooting`
+- Title
+- Objective
+- Problem
+- What I Tried
+- Solution
+- What I Learned
 
-## Future Improvements
+Example category attribute:
 
-- Replace placeholder links with final project and contact links
-- Add real screenshots for each featured project
-- Add downloadable resume PDF
-- Add more technical blog posts from Linux, AWS, networking, and cybersecurity labs
-- Improve accessibility and performance checks
-- Add clearer project cards with direct GitHub repository links
+```html
+<article class="post-card reveal" data-category="linux">
+```
 
-## Contact
+## Update Problems Solved
 
-- GitHub: https://github.com/khalidshams-tech
-- LinkedIn: https://www.linkedin.com/in/khalid-shams-868aaa1a6
-- Portfolio: https://khalidshams-tech.github.io/blogIT138/
+Open `index.html` and search for:
+
+```text
+Problems Solved
+```
+
+Each item should use this format:
+
+- Problem
+- Cause
+- Fix
+- Lesson
+
+## Update Projects
+
+There are two project areas:
+
+1. **Core Projects** in `index.html`
+2. **GitHub Projects** loaded automatically from:
+
+```text
+https://api.github.com/users/khalidshams-tech/repos
+```
+
+To improve the automatic GitHub project cards:
+
+- Add good descriptions to your GitHub repositories.
+- Keep project names clear.
+- Update repositories regularly.
+- Use relevant project names like `linux-labs`, `aws-labs`, `networking-labs`, `python-scripts`, or `cybersecurity-notes`.
+
+## Edit Contact Links
+
+Open `index.html` and search for:
+
+```text
+Resume & Contact
+```
+
+Current contact links:
+
+- GitHub: `https://github.com/khalidshams-tech`
+- LinkedIn: `https://www.linkedin.com/in/khalid-shams-868aaa1a6`
+- Email: `Khalidshams108@gmail.com`
+
+## Changed Files
+
+- `index.html` - simplified structure and content organization
+- `assets/css/styles.css` - cleaner professional dark design
+- `assets/js/script.js` - navigation, filters, profile fallback, and GitHub API project loading
+- `README.md` - updated instructions for blog posts, projects, and profile photo

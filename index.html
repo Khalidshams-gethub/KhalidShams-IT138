@@ -3,17 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Khalid Shams is an IT student focused on cloud computing, cybersecurity, Linux, networking, troubleshooting, and practical technical skills.">
-  <meta name="keywords" content="Khalid Shams, IT student, cybersecurity, cloud computing, Linux, networking, AWS, technical blog, portfolio">
+  <meta name="description" content="Khalid Shams is an IT student focused on IT support, Linux, cybersecurity, cloud computing, networking, and troubleshooting.">
+  <meta name="keywords" content="Khalid Shams, IT student, cybersecurity, cloud computing, Linux, networking, troubleshooting, GitHub Pages, technical blog, portfolio">
   <meta name="author" content="Khalid Shams">
   <meta property="og:title" content="Khalid Shams | IT Student Portfolio">
-  <meta property="og:description" content="Technical blog and portfolio for cloud, cybersecurity, Linux, networking, and IT problem solving.">
+  <meta property="og:description" content="A clean technical blog and portfolio showing IT learning, troubleshooting, projects, certifications, and technical growth.">
   <meta property="og:type" content="website">
-  <meta name="theme-color" content="#071016">
+  <meta name="theme-color" content="#0b1117">
   <title>Khalid Shams | IT Student Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
@@ -32,392 +32,332 @@
       </button>
       <div class="nav-links">
         <a href="#home">Home</a>
-        <a href="#about">About Me</a>
-        <a href="#blog">Technical Blog</a>
-        <a href="#challenges">Challenges</a>
-        <a href="#projects">Projects</a>
-        <a href="#trends">Tech Trends</a>
-        <a href="#resume">Resume</a>
-        <a href="#certifications">Certifications</a>
-        <a href="#contact">Contact</a>
+        <a href="#learning-blog">Learning Blog</a>
+        <a href="#problems-solved">Problems Solved</a>
+        <a href="#projects-certifications">Projects &amp; Certifications</a>
+        <a href="#resume-contact">Resume &amp; Contact</a>
       </div>
     </nav>
   </header>
 
   <main id="main">
-    <section class="hero section-band" id="home">
-      <div class="hero-grid">
-        <div class="hero-copy reveal">
-          <h1>Khalid Shams</h1>
-          <p class="hero-title">IT Support | Cybersecurity | Cloud Computing | Linux</p>
-          <p class="hero-text">
-            Welcome to my technical portfolio. I am building practical IT skills through North Seattle College
-            cybersecurity studies, AWS Academy labs, Linux and networking practice, Python projects, and clear documentation.
-          </p>
-          <div class="hero-actions">
-            <a class="button primary" href="#projects">
-              <span class="icon" aria-hidden="true">[]</span>
-              View Projects
-            </a>
-            <a class="button secondary" href="#blog">
-              <span class="icon" aria-hidden="true">~</span>
-              Read Blog
-            </a>
-            <a class="button ghost" href="#contact">
-              <span class="icon" aria-hidden="true">-></span>
-              Contact Me
-            </a>
-          </div>
-        </div>
-
-        <div class="hero-panel reveal" aria-label="Profile summary">
-          <div class="profile-orbit">
-            <button class="profile-photo" type="button" aria-label="Upload or change profile photo">
-              <img id="profileImage" src="assets/img/profile.jpg" alt="Khalid Shams profile photo" onerror="this.hidden=true">
-              <span id="profileInitials">KS</span>
-              <small>Click to upload photo</small>
-            </button>
-            <input id="profileUpload" class="profile-upload" type="file" accept="image/*" aria-label="Choose profile photo">
-          </div>
-          <div class="terminal-card">
-            <div class="terminal-bar">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-            <p><strong>focus</strong>: cloud labs, secure systems, Linux workflows</p>
-            <p><strong>mindset</strong>: document, test, troubleshoot, improve</p>
-            <p><strong>goal</strong>: grow into a dependable IT professional</p>
-          </div>
+    <section class="hero section" id="home">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">IT138 Technical Blog and Portfolio</p>
+        <h1>Khalid Shams</h1>
+        <p class="hero-title">IT Student | Cybersecurity | Cloud | Linux</p>
+        <p class="hero-text">
+          I am building practical IT skills through Linux labs, networking practice, cybersecurity study,
+          cloud computing, and real troubleshooting. This site documents my learning, projects,
+          certifications, and progress toward a future IT/cybersecurity career.
+        </p>
+        <div class="hero-actions" aria-label="Quick links">
+          <a class="button primary" href="#projects-certifications">View Projects</a>
+          <a class="button secondary" href="#learning-blog">Read Blog</a>
+          <a class="button quiet" href="#resume-contact">Contact</a>
         </div>
       </div>
+
+      <aside class="profile-card reveal" aria-label="Profile summary">
+        <div class="profile-photo" aria-label="Khalid Shams profile image">
+          <img id="profileImage" src="assets/images/profile.jpg" alt="Khalid Shams profile photo">
+          <span id="profileInitials" aria-hidden="true">KS</span>
+        </div>
+        <div>
+          <h2>Future IT Professional</h2>
+          <p>
+            Focused on IT support, Linux, cybersecurity, cloud computing, networking, and clear
+            technical documentation.
+          </p>
+        </div>
+        <ul class="focus-list" aria-label="Focus areas">
+          <li>IT Support</li>
+          <li>Linux</li>
+          <li>Cybersecurity</li>
+          <li>Cloud</li>
+          <li>Networking</li>
+          <li>Troubleshooting</li>
+        </ul>
+      </aside>
     </section>
 
-    <section class="section-band about" id="about">
+    <section class="section intro-section" aria-label="About Khalid Shams">
       <div class="section-heading reveal">
-        <p class="section-label">About Me</p>
-        <h2>Building a strong foundation for a future in IT.</h2>
+        <p class="eyebrow">About Me</p>
+        <h2>Learning by building, testing, fixing, and documenting.</h2>
       </div>
-      <div class="about-grid">
-        <article class="story-panel reveal">
-          <h3>Personal Biography</h3>
+      <div class="two-column">
+        <article class="panel reveal">
+          <h3>My Learning Journey</h3>
           <p>
-            My name is Khalid Shams, and I am an Information Technology and Cybersecurity student at
-            North Seattle College. I am focused on learning how modern technology systems are built,
-            secured, connected, and supported.
+            My name is Khalid Shams, and I am an IT student focused on learning how modern
+            technology systems are built, secured, connected, and supported. I enjoy working
+            through technical problems step by step and turning lessons learned into useful notes.
           </p>
           <p>
-            My learning journey is centered on IT support, cybersecurity, cloud computing, Linux,
-            networking, and practical troubleshooting. I enjoy working through technical problems
-            step by step and turning lessons learned into useful notes and portfolio projects.
-          </p>
-          <p>
-            My LinkedIn profile highlights AWS Academy labs, IAM, VPC, EC2, network security,
-            Linux/Unix lab projects, GitHub collaboration, DevOps workflow basics, and secure
-            software development practice. My background also includes CRDSA-WFP project work,
-            which helped me build discipline, documentation habits, and real-world problem-solving experience.
+            I am studying Information Technology and Cybersecurity at North Seattle College. My
+            learning includes hands-on cloud, Linux, networking, AWS Academy, and secure systems
+            practice. My CRDSA-WFP project experience also helped me build discipline,
+            documentation habits, and real-world problem-solving skills.
           </p>
         </article>
-        <div class="skills-panel reveal" aria-label="Technical skills progress">
-          <h3>Current Skill Focus</h3>
-          <div class="skill">
+        <article class="panel reveal">
+          <h3>Career Goals</h3>
+          <p>
+            My goal is to grow into a dependable IT professional who can support secure and
+            reliable systems. I am especially interested in IT support, cybersecurity, cloud
+            operations, networking, Linux administration, and troubleshooting.
+          </p>
+          <div class="skill-list" aria-label="Current skill focus">
             <span>Linux</span>
-            <strong>78%</strong>
-            <div class="meter"><span style="--value: 78%"></span></div>
-          </div>
-          <div class="skill">
             <span>Networking</span>
-            <strong>72%</strong>
-            <div class="meter"><span style="--value: 72%"></span></div>
-          </div>
-          <div class="skill">
             <span>Cybersecurity</span>
-            <strong>68%</strong>
-            <div class="meter"><span style="--value: 68%"></span></div>
+            <span>Cloud Computing</span>
+            <span>Documentation</span>
           </div>
-          <div class="skill">
-            <span>AWS Cloud Labs</span>
-            <strong>64%</strong>
-            <div class="meter"><span style="--value: 64%"></span></div>
-          </div>
-        </div>
-      </div>
-      <div class="timeline reveal" aria-label="Learning journey timeline">
-        <div>
-          <span>Now</span>
-          <strong>Strengthening fundamentals</strong>
-          <p>Linux commands, networking concepts, troubleshooting habits, and documentation.</p>
-        </div>
-        <div>
-          <span>Next</span>
-          <strong>Cloud and security labs</strong>
-          <p>AWS IAM, VPC, EC2, secure SSH access, network security, and system hardening.</p>
-        </div>
-        <div>
-          <span>Future</span>
-          <strong>Professional IT role</strong>
-          <p>Apply technical skills in support, cloud operations, cybersecurity, or networking.</p>
-        </div>
+        </article>
       </div>
     </section>
 
-    <section class="section-band" id="blog">
+    <section class="section" id="learning-blog">
       <div class="section-heading reveal">
-        <p class="section-label">Technical Blog</p>
-        <h2>Weekly notes from labs, research, and problem solving.</h2>
+        <p class="eyebrow">Learning Blog</p>
+        <h2>Weekly technical notes organized by category.</h2>
+        <p>
+          Each post follows the same professional format: Objective, Problem, What I Tried,
+          Solution, and What I Learned.
+        </p>
       </div>
-      <div class="blog-toolbar reveal" role="list" aria-label="Blog categories">
+
+      <div class="filter-row reveal" aria-label="Blog categories">
         <button class="filter-button active" data-filter="all" type="button">All</button>
         <button class="filter-button" data-filter="linux" type="button">Linux</button>
         <button class="filter-button" data-filter="networking" type="button">Networking</button>
-        <button class="filter-button" data-filter="aws" type="button">AWS</button>
+        <button class="filter-button" data-filter="cloud" type="button">Cloud</button>
         <button class="filter-button" data-filter="cybersecurity" type="button">Cybersecurity</button>
         <button class="filter-button" data-filter="troubleshooting" type="button">Troubleshooting</button>
-        <button class="filter-button" data-filter="technology" type="button">New Technology</button>
       </div>
+
       <div class="card-grid blog-grid">
-        <article class="content-card reveal" data-category="linux">
-          <span class="card-tag">Linux</span>
-          <h3>Linux and SSH Log Triage</h3>
-          <p>Notes connected to my Bash project for reading failed SSH logins and summarizing suspicious activity.</p>
-          <a href="https://github.com/khalidshams-tech/log-triage" target="_blank" rel="noreferrer" aria-label="View Linux and log triage project on GitHub">View project</a>
+        <article class="post-card reveal" data-category="linux">
+          <span class="tag">Linux</span>
+          <h3>Useful Linux Commands for IT Students</h3>
+          <dl>
+            <dt>Objective</dt>
+            <dd>Practice terminal navigation, files, permissions, logs, and basic system checks.</dd>
+            <dt>Problem</dt>
+            <dd>Linux can feel confusing when commands, paths, and permissions are new.</dd>
+            <dt>What I Tried</dt>
+            <dd>Used commands such as pwd, ls, cd, cat, chmod, chown, systemctl, and journalctl.</dd>
+            <dt>Solution</dt>
+            <dd>Created repeatable notes and tested each command in lab scenarios.</dd>
+            <dt>What I Learned</dt>
+            <dd>Good Linux troubleshooting starts with location, permissions, service status, and logs.</dd>
+          </dl>
         </article>
-        <article class="content-card reveal" data-category="networking">
-          <span class="card-tag">Networking</span>
+
+        <article class="post-card reveal" data-category="networking">
+          <span class="tag">Networking</span>
           <h3>DNS, IP Addresses, and Connectivity Checks</h3>
-          <p>A practical troubleshooting workflow connected to my Linux, networking, and web server lab work.</p>
-          <a href="https://github.com/khalidshams-tech/linux-web" target="_blank" rel="noreferrer" aria-label="View networking and Linux web lab on GitHub">View project</a>
+          <dl>
+            <dt>Objective</dt>
+            <dd>Understand basic network troubleshooting from the local device to external services.</dd>
+            <dt>Problem</dt>
+            <dd>A system may be connected but still fail to reach websites or services.</dd>
+            <dt>What I Tried</dt>
+            <dd>Checked IP settings, gateway, DNS resolution, ping results, and browser behavior.</dd>
+            <dt>Solution</dt>
+            <dd>Used a layered process: local settings, gateway, DNS, firewall, then service status.</dd>
+            <dt>What I Learned</dt>
+            <dd>Networking problems are easier when each layer is tested in order.</dd>
+          </dl>
         </article>
-        <article class="content-card reveal" data-category="aws">
-          <span class="card-tag">AWS</span>
-          <h3>AWS Cloud Security Labs</h3>
-          <p>Cloud learning notes based on IAM, VPC, EC2, S3, CloudWatch, secure access, and network security concepts.</p>
-          <a href="https://github.com/khalidshams-tech/aws-cloud-security-labs" target="_blank" rel="noreferrer" aria-label="View AWS Cloud Security Labs on GitHub">View AWS labs</a>
+
+        <article class="post-card reveal" data-category="cloud">
+          <span class="tag">Cloud</span>
+          <h3>Launching an AWS EC2 Instance Safely</h3>
+          <dl>
+            <dt>Objective</dt>
+            <dd>Practice cloud server setup, IAM, VPC, EC2, S3, CloudWatch, and secure remote access basics.</dd>
+            <dt>Problem</dt>
+            <dd>Cloud servers require correct keys, security groups, regions, and cost awareness.</dd>
+            <dt>What I Tried</dt>
+            <dd>Launched EC2, created a key pair, reviewed inbound rules, studied IAM and VPC basics, and connected with SSH.</dd>
+            <dt>Solution</dt>
+            <dd>Allowed only needed access, named resources clearly, and shut down unused labs.</dd>
+            <dt>What I Learned</dt>
+            <dd>Cloud work requires both technical setup and responsible security habits.</dd>
+          </dl>
+        </article>
+
+        <article class="post-card reveal" data-category="cybersecurity">
+          <span class="tag">Cybersecurity</span>
+          <h3>Security Habits for New IT Professionals</h3>
+          <dl>
+            <dt>Objective</dt>
+            <dd>Build daily habits that reduce risk in labs and real environments.</dd>
+            <dt>Problem</dt>
+            <dd>Small mistakes in passwords, updates, permissions, or access rules can create risk.</dd>
+            <dt>What I Tried</dt>
+            <dd>Reviewed MFA, least privilege, patching, password hygiene, and secure SSH access.</dd>
+            <dt>Solution</dt>
+            <dd>Used checklists for access, updates, backups, and documentation.</dd>
+            <dt>What I Learned</dt>
+            <dd>Security is not only tools; it is careful behavior repeated consistently.</dd>
+          </dl>
+        </article>
+
+        <article class="post-card reveal" data-category="troubleshooting">
+          <span class="tag">Troubleshooting</span>
+          <h3>How I Approach Technical Problems</h3>
+          <dl>
+            <dt>Objective</dt>
+            <dd>Create a calm process for diagnosing IT issues.</dd>
+            <dt>Problem</dt>
+            <dd>Jumping to fixes too quickly can waste time or hide the real cause.</dd>
+            <dt>What I Tried</dt>
+            <dd>Wrote down symptoms, reproduced the issue, checked logs, and tested one change at a time.</dd>
+            <dt>Solution</dt>
+            <dd>Used a simple process: observe, isolate, test, document, and verify.</dd>
+            <dt>What I Learned</dt>
+            <dd>Strong troubleshooting is organized thinking plus good documentation.</dd>
+          </dl>
         </article>
       </div>
     </section>
 
-    <section class="section-band" id="challenges">
+    <section class="section" id="problems-solved">
       <div class="section-heading reveal">
-        <p class="section-label">Challenges</p>
-        <h2>Technical problems solved through careful troubleshooting.</h2>
+        <p class="eyebrow">Problems Solved</p>
+        <h2>Real troubleshooting examples from my learning.</h2>
       </div>
-      <div class="challenge-list">
-        <article class="challenge-item reveal">
-          <span>01</span>
+
+      <div class="problem-list">
+        <article class="problem-item reveal">
+          <span class="number">01</span>
           <div>
-            <h3>GitHub Pages 404 Issue</h3>
-            <p>Checked repository settings, file names, branch source, and case-sensitive paths until the site published correctly.</p>
+            <h3>GitHub Pages 404 Error</h3>
+            <p><strong>Problem:</strong> The site link opened a 404 page instead of my portfolio.</p>
+            <p><strong>Cause:</strong> Repository name, Pages source, branch, file path, or publishing delay can cause the page not to load.</p>
+            <p><strong>Fix:</strong> Checked the repository URL, confirmed the main branch, kept `index.html` at the root, and waited for Pages to publish.</p>
+            <p><strong>Lesson:</strong> Deployment problems need careful checks of names, paths, branch settings, and timing.</p>
           </div>
         </article>
-        <article class="challenge-item reveal">
-          <span>02</span>
+
+        <article class="problem-item reveal">
+          <span class="number">02</span>
           <div>
             <h3>Linux Permission Denied</h3>
-            <p>Reviewed ownership, executable bits, path permissions, and command context before changing access safely.</p>
+            <p><strong>Problem:</strong> A command or script could not run because Linux blocked access.</p>
+            <p><strong>Cause:</strong> The file lacked the correct permission, owner, or execution bit.</p>
+            <p><strong>Fix:</strong> Checked ownership and permissions, then used the correct chmod or chown change only when needed.</p>
+            <p><strong>Lesson:</strong> Permissions should be understood before they are changed.</p>
           </div>
         </article>
-        <article class="challenge-item reveal">
-          <span>03</span>
+
+        <article class="problem-item reveal">
+          <span class="number">03</span>
           <div>
-            <h3>SSH Errors</h3>
-            <p>Verified keys, usernames, security groups, host fingerprints, and service status to restore secure access.</p>
+            <h3>SSH Issues</h3>
+            <p><strong>Problem:</strong> SSH failed when connecting to a cloud or lab machine.</p>
+            <p><strong>Cause:</strong> Common causes include wrong username, wrong key, blocked port 22, or incorrect security group rules.</p>
+            <p><strong>Fix:</strong> Verified the key file, username, instance status, security group, and network path.</p>
+            <p><strong>Lesson:</strong> SSH troubleshooting should include identity, network access, and server status.</p>
           </div>
         </article>
-        <article class="challenge-item reveal">
-          <span>04</span>
+
+        <article class="problem-item reveal">
+          <span class="number">04</span>
           <div>
-            <h3>DNS and VM Networking Problems</h3>
-            <p>Used layered checks across adapter settings, IP configuration, gateway, DNS resolution, and firewall rules.</p>
+            <h3>DNS Problems</h3>
+            <p><strong>Problem:</strong> Websites or services did not load even when the network looked connected.</p>
+            <p><strong>Cause:</strong> DNS settings or name resolution can fail while basic connectivity still works.</p>
+            <p><strong>Fix:</strong> Tested IP connectivity first, then checked DNS server settings and name lookup results.</p>
+            <p><strong>Lesson:</strong> Test IP and DNS separately to find where the failure begins.</p>
           </div>
         </article>
       </div>
     </section>
 
-    <section class="section-band" id="projects">
+    <section class="section" id="projects-certifications">
       <div class="section-heading reveal">
-        <p class="section-label">Projects</p>
-        <h2>Hands-on work that proves technical growth.</h2>
+        <p class="eyebrow">Projects &amp; Certifications</p>
+        <h2>Hands-on work and learning milestones.</h2>
       </div>
-      <div class="card-grid project-grid">
-        <article class="project-card reveal">
-          <div class="project-icon">WEB</div>
-          <h3>Technical Blog and Portfolio</h3>
-          <p>GitHub Pages website connecting my LinkedIn background, certifications, resume, and strongest technical projects.</p>
-          <a href="https://github.com/khalidshams-tech/blogIT138" target="_blank" rel="noreferrer">View repository</a>
-        </article>
-        <article class="project-card reveal">
-          <div class="project-icon">SEC</div>
-          <h3>SSH Log Triage Script</h3>
-          <p>Bash script for reviewing SSH failed-login activity, summarizing suspicious attempts, and practicing defensive security basics.</p>
-          <a href="https://github.com/khalidshams-tech/log-triage" target="_blank" rel="noreferrer">View repository</a>
-        </article>
-        <article class="project-card reveal">
-          <div class="project-icon">PY</div>
-          <h3>Kash Card Game</h3>
-          <p>Flask web app for tracking a three-player card game with sessions, round scoring, role rotation, and result handling.</p>
-          <a href="https://github.com/khalidshams-tech/Kash-Card-Game" target="_blank" rel="noreferrer">View repository</a>
-        </article>
-        <article class="project-card reveal">
-          <div class="project-icon">FLK</div>
-          <h3>Flask Dice Game</h3>
-          <p>Beginner Flask web game showing routes, templates, session state, project organization, and game logic practice.</p>
-          <a href="https://github.com/khalidshams-tech/flask-dice-game" target="_blank" rel="noreferrer">View repository</a>
-        </article>
-        <article class="project-card reveal">
-          <div class="project-icon">CRUD</div>
-          <h3>Bookstore Event Manager</h3>
-          <p>Python console application for managing events, attendees, updates, deletion, and input validation.</p>
-          <a href="https://github.com/khalidshams-tech/bookstore-event-manager" target="_blank" rel="noreferrer">View repository</a>
-        </article>
-        <article class="project-card reveal">
-          <div class="project-icon">AWS</div>
-          <h3>AWS Cloud Security Labs</h3>
-          <p>Organized AWS portfolio with IAM, VPC, EC2, S3, CloudWatch, architecture notes, security best practices, and sanitized screenshots.</p>
-          <a href="https://github.com/khalidshams-tech/aws-cloud-security-labs" target="_blank" rel="noreferrer">View repository</a>
-        </article>
-      </div>
-    </section>
 
-    <section class="section-band trends" id="trends">
-      <div class="section-heading reveal">
-        <p class="section-label">Tech Trends</p>
-        <h2>Following the tools and shifts shaping modern IT.</h2>
-      </div>
-      <div class="trend-grid">
-        <article class="trend-card reveal">
-          <h3>AI Tools for IT</h3>
-          <p>Learning how AI can support documentation, troubleshooting, scripting, and help desk workflows.</p>
+      <div class="two-column">
+        <article class="panel reveal">
+          <h3>Core Projects</h3>
+          <ul class="clean-list">
+            <li><strong>GitHub Pages blog:</strong> A professional technical blog and portfolio for IT138 and career growth.</li>
+            <li><strong>AWS Cloud Security Labs:</strong> IAM, VPC, EC2, S3, CloudWatch, architecture notes, security best practices, and sanitized screenshots.</li>
+            <li><strong>SSH Log Triage Script:</strong> Bash practice for reviewing failed SSH login activity and documenting suspicious attempts.</li>
+            <li><strong>Linux labs:</strong> Command line, permissions, packages, services, logs, and troubleshooting.</li>
+            <li><strong>Networking labs:</strong> IP addressing, DNS checks, VM networking, and connectivity testing.</li>
+            <li><strong>Python and Flask projects:</strong> Kash Card Game, Flask Dice Game, Bookstore Event Manager, and small automation scripts.</li>
+          </ul>
         </article>
-        <article class="trend-card reveal">
-          <h3>Cybersecurity Updates</h3>
-          <p>Tracking identity security, log review, vulnerability awareness, and secure configuration habits.</p>
-        </article>
-        <article class="trend-card reveal">
-          <h3>Cloud Trends</h3>
-          <p>Studying AWS IAM, VPC, EC2, S3, CloudWatch, network security, monitoring, and cost-aware cloud habits.</p>
-        </article>
-      </div>
-    </section>
 
-    <section class="section-band resume" id="resume">
-      <div class="resume-grid">
-        <div class="section-heading reveal">
-          <p class="section-label">Resume</p>
-          <h2>Prepared to keep learning and contribute with discipline.</h2>
-          <a class="button primary" href="resume.html" download="Khalid-Shams-Resume.html">
-            <span class="icon" aria-hidden="true">v</span>
-            Download Resume
-          </a>
+        <article class="panel reveal">
+          <h3>Certifications &amp; Learning</h3>
+          <ul class="clean-list">
+            <li><strong>CompTIA A+ ce:</strong> Issued Feb 2025, expires Feb 2028.</li>
+            <li><strong>CompTIA Network+ ce:</strong> Issued Dec 2024, expires Dec 2027.</li>
+            <li><strong>CompTIA Security+ ce:</strong> Issued Apr 2025, expires Apr 2028.</li>
+            <li><strong>CompTIA CSIS:</strong> Secure Infrastructure Specialist, issued Apr 2025.</li>
+            <li><strong>CompTIA CIOS:</strong> IT Operations Specialist, issued Feb 2025.</li>
+            <li><strong>Preparing Linux+:</strong> Current learning goal.</li>
+            <li><strong>AWS learning:</strong> Cloud fundamentals, IAM, VPC, EC2, S3, CloudWatch, and network security labs.</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="github-projects reveal" aria-live="polite">
+        <div class="section-heading compact">
+          <p class="eyebrow">GitHub Projects</p>
+          <h2>Recent public repositories</h2>
+          <p>Loaded automatically from GitHub and sorted by recent activity.</p>
         </div>
-        <div class="resume-panel reveal">
-          <h3>Certifications</h3>
-          <ul>
-            <li>CompTIA Security+ ce Certification</li>
-            <li>CompTIA Network+ ce Certification</li>
-            <li>CompTIA A+ ce Certification</li>
-            <li>CompTIA Secure Infrastructure Specialist - CSIS</li>
-            <li>CompTIA IT Operations Specialist - CIOS</li>
-          </ul>
-          <h3>Current Learning Goals</h3>
-          <ul>
-            <li>Build stronger Linux and Unix administration skills</li>
-            <li>Practice DNS, IP addressing, SSH, and network troubleshooting</li>
-            <li>Continue AWS IAM, VPC, EC2, S3, CloudWatch, and network security labs</li>
-            <li>Document technical work clearly through GitHub and portfolio projects</li>
-          </ul>
+        <div id="githubProjects" class="repo-grid">
+          <article class="repo-card loading">Loading GitHub projects...</article>
         </div>
       </div>
     </section>
 
-    <section class="section-band certifications" id="certifications">
+    <section class="section" id="resume-contact">
       <div class="section-heading reveal">
-        <p class="section-label">Certifications</p>
-        <h2>Verified learning milestones that support my IT career path.</h2>
+        <p class="eyebrow">Resume &amp; Contact</p>
+        <h2>Connect with me or review my resume.</h2>
       </div>
-      <div class="cert-grid">
-        <article class="cert-card reveal">
-          <span class="cert-badge">CompTIA</span>
-          <h3>CompTIA Security+ ce Certification</h3>
-          <p>Issued Apr 2025 - Expires Apr 2028</p>
-          <a href="https://www.linkedin.com/in/khalid-shams-868aaa1a6" target="_blank" rel="noreferrer">View LinkedIn</a>
-        </article>
-        <article class="cert-card reveal">
-          <span class="cert-badge">CompTIA</span>
-          <h3>CompTIA Network+ ce Certification</h3>
-          <p>Issued Dec 2024 - Expires Dec 2027</p>
-          <a href="https://www.linkedin.com/in/khalid-shams-868aaa1a6" target="_blank" rel="noreferrer">View LinkedIn</a>
-        </article>
-        <article class="cert-card reveal">
-          <span class="cert-badge">CompTIA</span>
-          <h3>CompTIA A+ ce Certification</h3>
-          <p>Issued Feb 2025 - Expires Feb 2028</p>
-          <a href="https://www.linkedin.com/in/khalid-shams-868aaa1a6" target="_blank" rel="noreferrer">View LinkedIn</a>
-        </article>
-        <article class="cert-card reveal">
-          <span class="cert-badge">Stackable</span>
-          <h3>CompTIA Secure Infrastructure Specialist - CSIS</h3>
-          <p>Issued Apr 2025 - Expires Apr 2028</p>
-          <a href="https://www.linkedin.com/in/khalid-shams-868aaa1a6" target="_blank" rel="noreferrer">View LinkedIn</a>
-        </article>
-        <article class="cert-card reveal">
-          <span class="cert-badge">Stackable</span>
-          <h3>CompTIA IT Operations Specialist - CIOS</h3>
-          <p>Issued Feb 2025 - Expires Dec 2027</p>
-          <a href="https://www.linkedin.com/in/khalid-shams-868aaa1a6" target="_blank" rel="noreferrer">View LinkedIn</a>
-        </article>
-        <article class="cert-card reveal">
-          <span class="cert-badge">Learning</span>
-          <h3>AWS Cloud Practitioner Learning Path</h3>
-          <p>Current goal focused on cloud fundamentals, IAM, EC2, VPC, S3, CloudWatch, and network security labs.</p>
-          <a href="https://github.com/khalidshams-tech/aws-cloud-security-labs" target="_blank" rel="noreferrer">View AWS labs</a>
-        </article>
-      </div>
-    </section>
 
-    <section class="section-band contact" id="contact">
-      <div class="section-heading reveal">
-        <p class="section-label">Contact</p>
-        <h2>Connect with me about IT, cloud, cybersecurity, or opportunities.</h2>
+      <div class="resume-contact-grid">
+        <article class="panel reveal">
+          <h3>Resume</h3>
+          <p>
+            My resume summarizes my IT education, hands-on labs, certifications, project work,
+            and current technical learning goals.
+          </p>
+          <a class="button primary" href="resume.html" download="Khalid-Shams-Resume.html">Download Resume</a>
+        </article>
+
+        <article class="panel reveal">
+          <h3>Contact Links</h3>
+          <div class="contact-links">
+            <a href="https://github.com/khalidshams-tech" target="_blank" rel="noreferrer">
+              <span>GH</span>
+              GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/khalid-shams-868aaa1a6" target="_blank" rel="noreferrer">
+              <span>in</span>
+              LinkedIn
+            </a>
+            <a href="mailto:Khalidshams108@gmail.com">
+              <span>@</span>
+              Email
+            </a>
+          </div>
+        </article>
       </div>
-      <div class="contact-grid">
-        <a class="contact-card reveal" href="https://www.linkedin.com/in/khalid-shams-868aaa1a6" target="_blank" rel="noreferrer">
-          <span class="social-icon">in</span>
-          <strong>LinkedIn</strong>
-          <small>Professional profile</small>
-        </a>
-        <a class="contact-card reveal" href="https://github.com/khalidshams-tech" target="_blank" rel="noreferrer">
-          <span class="social-icon">GH</span>
-          <strong>GitHub</strong>
-          <small>Projects and code</small>
-        </a>
-        <a class="contact-card reveal" href="mailto:Khalidshams108@gmail.com">
-          <span class="social-icon">@</span>
-          <strong>Email</strong>
-          <small>Khalidshams108@gmail.com</small>
-        </a>
-        <a class="contact-card reveal" href="https://github.com/khalidshams-tech/khalidshams-tech" target="_blank" rel="noreferrer">
-          <span class="social-icon">PR</span>
-          <strong>Profile README</strong>
-          <small>Professional GitHub overview</small>
-        </a>
-      </div>
-      <form class="contact-form reveal" action="mailto:Khalidshams108@gmail.com" method="POST" enctype="text/plain">
-        <label>
-          Name
-          <input name="name" type="text" placeholder="Your name" required>
-        </label>
-        <label>
-          Email
-          <input name="email" type="email" placeholder="you@example.com" required>
-        </label>
-        <label>
-          Message
-          <textarea name="message" rows="5" placeholder="Write your message" required></textarea>
-        </label>
-        <button class="button primary" type="submit">Send Message</button>
-        <p class="form-note">This opens your email app so you can send a message directly.</p>
-      </form>
     </section>
   </main>
 
