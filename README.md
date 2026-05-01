@@ -82,6 +82,20 @@ Example category attribute:
 <article class="post-card reveal" data-category="linux">
 ```
 
+## Weekly IT138 Linux Posts
+
+For the weekly IT138 Linux blog requirement, add each new class post under the Learning Blog section with:
+
+- Category: `linux`
+- Title format: `IT138 Linux Week X: Topic Name`
+- Objective: what the weekly lab or lesson is practicing
+- Problem: what was confusing or important to solve
+- What I Tried: commands, tools, or steps tested
+- Solution: the final process that worked
+- What I Learned: the professional lesson from the week
+
+Place the newest weekly Linux post above older Linux posts so it appears first when the Linux tab is selected.
+
 ## Update Problems Solved
 
 Open `index.html` and search for:
