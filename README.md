@@ -58,7 +58,7 @@ git commit -m "Add profile photo"
 git push
 ```
 
-## Add a New Blog Post
+## Add a New Weekly Blog Post
 
 Open `index.html` and search for:
 
@@ -69,7 +69,7 @@ Learning Blog
 Copy one existing `<article class="post-card">` block and update:
 
 - Category: `linux`, `networking`, `cloud`, `cybersecurity`, or `troubleshooting`
-- Title
+- Title format: `IT138 Linux Week X: Topic Name` or the matching topic name
 - Objective
 - Problem
 - What I Tried
@@ -82,19 +82,19 @@ Example category attribute:
 <article class="post-card reveal" data-category="linux">
 ```
 
-## Weekly IT138 Linux Posts
+## Weekly IT138 Class Posts
 
-For the weekly IT138 Linux blog requirement, add each new class post under the Learning Blog section with:
+For the weekly IT138 blog requirement, add each new class post under the correct Learning Blog tab with:
 
-- Category: `linux`
-- Title format: `IT138 Linux Week X: Topic Name`
+- Category: `linux`, `networking`, `cloud`, `cybersecurity`, or `troubleshooting`
+- Title format: `IT138 Linux Week X: Topic Name` or the matching topic name
 - Objective: what the weekly lab or lesson is practicing
 - Problem: what was confusing or important to solve
 - What I Tried: commands, tools, or steps tested
 - Solution: the final process that worked
 - What I Learned: the professional lesson from the week
 
-Place the newest weekly Linux post above older Linux posts so it appears first when the Linux tab is selected.
+Place the newest weekly post above older posts in the same category so it appears first when that tab is selected.
 
 ## Update Problems Solved
 

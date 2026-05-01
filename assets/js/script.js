@@ -5,11 +5,43 @@ const sections = [...document.querySelectorAll("main section[id]")];
 const revealItems = [...document.querySelectorAll(".reveal")];
 const filterButtons = [...document.querySelectorAll(".filter-button")];
 const blogCards = [...document.querySelectorAll(".blog-grid .post-card")];
+const activeCategoryLabel = document.getElementById("activeCategoryLabel");
+const activeCategoryTitle = document.getElementById("activeCategoryTitle");
+const activeCategoryDescription = document.getElementById("activeCategoryDescription");
+const emptyPosts = document.getElementById("emptyPosts");
 const profileImage = document.getElementById("profileImage");
 const profileInitials = document.getElementById("profileInitials");
 const githubProjects = document.getElementById("githubProjects");
 const emailLink = document.getElementById("emailLink");
 const githubReposUrl = "https://api.github.com/users/khalidshams-tech/repos";
+
+const categoryCopy = {
+  linux: {
+    label: "Linux",
+    title: "Linux Weekly Posts",
+    description: "IT138 Linux class posts will be added here week by week.",
+  },
+  networking: {
+    label: "Networking",
+    title: "Networking Weekly Posts",
+    description: "Networking class posts will be added here when I share weekly networking content.",
+  },
+  cloud: {
+    label: "Cloud",
+    title: "Cloud Weekly Posts",
+    description: "Cloud computing class posts will be added here when I share weekly cloud content.",
+  },
+  cybersecurity: {
+    label: "Cybersecurity",
+    title: "Cybersecurity Weekly Posts",
+    description: "Cybersecurity class posts will be added here when I share weekly security content.",
+  },
+  troubleshooting: {
+    label: "Troubleshooting",
+    title: "Troubleshooting Weekly Posts",
+    description: "Troubleshooting posts will be added here when I share weekly problem-solving content.",
+  },
+};
 
 document.getElementById("year").textContent = new Date().getFullYear();
 
@@ -66,16 +98,29 @@ if ("IntersectionObserver" in window) {
   revealItems.forEach((item) => item.classList.add("visible"));
 }
 
-filterButtons.forEach((button) => {
-  button.addEventListener("click", () => {
-    const filter = button.dataset.filter;
+const setActiveBlogCategory = (filter = "linux") => {
+  const copy = categoryCopy[filter] || categoryCopy.linux;
+  let visibleCount = 0;
 
-    filterButtons.forEach((item) => item.classList.toggle("active", item === button));
-    blogCards.forEach((card) => {
-      card.hidden = filter !== "all" && card.dataset.category !== filter;
-    });
+  activeCategoryLabel.textContent = copy.label;
+  activeCategoryTitle.textContent = copy.title;
+  activeCategoryDescription.textContent = copy.description;
+
+  filterButtons.forEach((item) => item.classList.toggle("active", item.dataset.filter === filter));
+  blogCards.forEach((card) => {
+    const isVisible = card.dataset.category === filter;
+    card.hidden = !isVisible;
+    if (isVisible) visibleCount += 1;
   });
+
+  emptyPosts.hidden = visibleCount > 0;
+};
+
+filterButtons.forEach((button) => {
+  button.addEventListener("click", () => setActiveBlogCategory(button.dataset.filter));
 });
+
+setActiveBlogCategory();
 
 emailLink?.addEventListener("click", (event) => {
   event.preventDefault();

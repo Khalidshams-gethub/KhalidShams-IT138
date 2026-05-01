@@ -138,20 +138,27 @@
     <section class="section" id="learning-blog">
       <div class="section-heading reveal">
         <p class="eyebrow">Learning Blog</p>
-        <h2>Weekly technical notes organized by category.</h2>
+        <h2>Weekly IT138 posts organized by class topic.</h2>
         <p>
-          Each post follows the same professional format: Objective, Problem, What I Tried,
-          Solution, and What I Learned.
+          Each tab contains the weekly posts I write for class. New posts are added under the
+          correct topic, such as Linux, Cloud, Cybersecurity, Networking, or Troubleshooting.
         </p>
       </div>
 
       <div class="filter-row reveal" aria-label="Blog categories">
-        <button class="filter-button active" data-filter="all" type="button">All</button>
-        <button class="filter-button" data-filter="linux" type="button">Linux</button>
+        <button class="filter-button active" data-filter="linux" type="button">Linux</button>
         <button class="filter-button" data-filter="networking" type="button">Networking</button>
         <button class="filter-button" data-filter="cloud" type="button">Cloud</button>
         <button class="filter-button" data-filter="cybersecurity" type="button">Cybersecurity</button>
         <button class="filter-button" data-filter="troubleshooting" type="button">Troubleshooting</button>
+      </div>
+
+      <div class="category-summary reveal" aria-live="polite">
+        <p class="eyebrow" id="activeCategoryLabel">Linux</p>
+        <h3 id="activeCategoryTitle">Linux Weekly Posts</h3>
+        <p id="activeCategoryDescription">
+          IT138 Linux class posts will be added here week by week.
+        </p>
       </div>
 
       <div class="card-grid blog-grid">
@@ -172,91 +179,8 @@
           </dl>
         </article>
 
-        <article class="post-card reveal" data-category="linux">
-          <span class="tag">Linux</span>
-          <h3>Useful Linux Commands for IT Students</h3>
-          <dl>
-            <dt>Objective</dt>
-            <dd>Practice terminal navigation, files, permissions, logs, and basic system checks.</dd>
-            <dt>Problem</dt>
-            <dd>Linux can feel confusing when commands, paths, and permissions are new.</dd>
-            <dt>What I Tried</dt>
-            <dd>Used commands such as pwd, ls, cd, cat, chmod, chown, systemctl, and journalctl.</dd>
-            <dt>Solution</dt>
-            <dd>Created repeatable notes and tested each command in lab scenarios.</dd>
-            <dt>What I Learned</dt>
-            <dd>Good Linux troubleshooting starts with location, permissions, service status, and logs.</dd>
-          </dl>
-        </article>
-
-        <article class="post-card reveal" data-category="networking">
-          <span class="tag">Networking</span>
-          <h3>DNS, IP Addresses, and Connectivity Checks</h3>
-          <dl>
-            <dt>Objective</dt>
-            <dd>Understand basic network troubleshooting from the local device to external services.</dd>
-            <dt>Problem</dt>
-            <dd>A system may be connected but still fail to reach websites or services.</dd>
-            <dt>What I Tried</dt>
-            <dd>Checked IP settings, gateway, DNS resolution, ping results, and browser behavior.</dd>
-            <dt>Solution</dt>
-            <dd>Used a layered process: local settings, gateway, DNS, firewall, then service status.</dd>
-            <dt>What I Learned</dt>
-            <dd>Networking problems are easier when each layer is tested in order.</dd>
-          </dl>
-        </article>
-
-        <article class="post-card reveal" data-category="cloud">
-          <span class="tag">Cloud</span>
-          <h3>Launching an AWS EC2 Instance Safely</h3>
-          <dl>
-            <dt>Objective</dt>
-            <dd>Practice cloud server setup, IAM, VPC, EC2, S3, CloudWatch, and secure remote access basics.</dd>
-            <dt>Problem</dt>
-            <dd>Cloud servers require correct keys, security groups, regions, and cost awareness.</dd>
-            <dt>What I Tried</dt>
-            <dd>Launched EC2, created a key pair, reviewed inbound rules, studied IAM and VPC basics, and connected with SSH.</dd>
-            <dt>Solution</dt>
-            <dd>Allowed only needed access, named resources clearly, and shut down unused labs.</dd>
-            <dt>What I Learned</dt>
-            <dd>Cloud work requires both technical setup and responsible security habits.</dd>
-          </dl>
-        </article>
-
-        <article class="post-card reveal" data-category="cybersecurity">
-          <span class="tag">Cybersecurity</span>
-          <h3>Security Habits for New IT Professionals</h3>
-          <dl>
-            <dt>Objective</dt>
-            <dd>Build daily habits that reduce risk in labs and real environments.</dd>
-            <dt>Problem</dt>
-            <dd>Small mistakes in passwords, updates, permissions, or access rules can create risk.</dd>
-            <dt>What I Tried</dt>
-            <dd>Reviewed MFA, least privilege, patching, password hygiene, and secure SSH access.</dd>
-            <dt>Solution</dt>
-            <dd>Used checklists for access, updates, backups, and documentation.</dd>
-            <dt>What I Learned</dt>
-            <dd>Security is not only tools; it is careful behavior repeated consistently.</dd>
-          </dl>
-        </article>
-
-        <article class="post-card reveal" data-category="troubleshooting">
-          <span class="tag">Troubleshooting</span>
-          <h3>How I Approach Technical Problems</h3>
-          <dl>
-            <dt>Objective</dt>
-            <dd>Create a calm process for diagnosing IT issues.</dd>
-            <dt>Problem</dt>
-            <dd>Jumping to fixes too quickly can waste time or hide the real cause.</dd>
-            <dt>What I Tried</dt>
-            <dd>Wrote down symptoms, reproduced the issue, checked logs, and tested one change at a time.</dd>
-            <dt>Solution</dt>
-            <dd>Used a simple process: observe, isolate, test, document, and verify.</dd>
-            <dt>What I Learned</dt>
-            <dd>Strong troubleshooting is organized thinking plus good documentation.</dd>
-          </dl>
-        </article>
       </div>
+      <p class="empty-posts" id="emptyPosts" hidden>No posts have been added to this topic yet.</p>
     </section>
 
     <section class="section" id="job-experience">

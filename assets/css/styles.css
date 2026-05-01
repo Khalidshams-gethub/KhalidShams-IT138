@@ -388,6 +388,23 @@ p {
   color: #061018;
 }
 
+.category-summary {
+  margin: 0 0 18px;
+  padding: 18px 20px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: rgba(18, 29, 39, 0.72);
+}
+
+.category-summary h3 {
+  margin: 0 0 6px;
+  font-size: 1.2rem;
+}
+
+.category-summary p:last-child {
+  margin: 0;
+}
+
 .card-grid,
 .repo-grid {
   display: grid;
@@ -412,6 +429,14 @@ p {
 
 .post-card dd {
   margin: 0 0 12px;
+  color: var(--muted);
+}
+
+.empty-posts {
+  margin: 0;
+  padding: 18px 20px;
+  border: 1px dashed rgba(168, 181, 194, 0.35);
+  border-radius: var(--radius);
   color: var(--muted);
 }
 
