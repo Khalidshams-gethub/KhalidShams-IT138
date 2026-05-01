@@ -82,9 +82,9 @@ Example category attribute:
 <article class="post-card reveal" data-category="linux">
 ```
 
-## Weekly IT138 Class Posts
+## Weekly Class Posts
 
-For the weekly IT138 blog requirement, add each new class post under the correct Learning Blog tab with:
+For weekly class blog requirements, add each new class post under the correct Learning Blog tab with:
 
 - Category: `linux`, `networking`, `cloud`, `cybersecurity`, or `troubleshooting`
 - Title format: `IT138 Linux Week X: Topic Name` or the matching topic name
@@ -94,7 +94,7 @@ For the weekly IT138 blog requirement, add each new class post under the correct
 - Solution: the final process that worked
 - What I Learned: the professional lesson from the week
 
-Place the newest weekly post above older posts in the same category so it appears first when that tab is selected.
+Place the newest weekly post above older posts in the same category so it appears first when that tab is selected. IT138 Linux posts belong under the `Linux IT138` tab.
 
 ## Update Problems Solved
 

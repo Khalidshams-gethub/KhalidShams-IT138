@@ -17,9 +17,9 @@ const githubReposUrl = "https://api.github.com/users/khalidshams-tech/repos";
 
 const categoryCopy = {
   linux: {
-    label: "Linux",
-    title: "Linux Weekly Posts",
-    description: "IT138 Linux class posts will be added here week by week.",
+    label: "Linux IT138",
+    title: "Linux IT138 Weekly Posts",
+    description: "Linux IT138 posts will be added here week by week.",
   },
   networking: {
     label: "Networking",
