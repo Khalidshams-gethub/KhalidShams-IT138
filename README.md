@@ -66,20 +66,25 @@ Open `index.html` and search for:
 Learning Blog
 ```
 
-Copy one existing `<article class="post-card">` block and update:
+Create a full post page inside `posts/`, then add a short card in `index.html`.
+
+For the `index.html` card, copy one existing `<article class="post-card">` block and update:
 
 - Category: `linux`, `networking`, `cloud`, `cybersecurity`, or `troubleshooting`
 - Title format: `IT138 Linux Week X: Topic Name` or the matching topic name
-- Objective
-- Problem
-- What I Tried
-- Solution
-- What I Learned
+- Short summary
+- Full post link, such as `posts/my-new-post.html`
 
 Example category attribute:
 
 ```html
 <article class="post-card reveal" data-category="linux">
+```
+
+Example full post link:
+
+```html
+<a class="post-link" href="posts/my-new-post.html" target="_blank" rel="noreferrer">Read full post</a>
 ```
 
 ## Weekly Class Posts
@@ -94,7 +99,7 @@ For weekly class blog requirements, add each new class post under the correct Le
 - Solution: the final process that worked
 - What I Learned: the professional lesson from the week
 
-Place the newest weekly post above older posts in the same category so it appears first when that tab is selected. IT138 Linux posts belong under the `Linux IT138` tab.
+Place the newest weekly post above older posts in the same category so it appears first when that tab is selected. IT138 Linux posts belong under the `Linux IT138` tab. Full homework content should live in its own HTML page inside `posts/`.
 
 ## Update Problems Solved
 

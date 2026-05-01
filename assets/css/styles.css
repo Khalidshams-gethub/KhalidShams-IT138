@@ -432,6 +432,54 @@ p {
   color: var(--muted);
 }
 
+.post-summary {
+  margin: 12px 0 0;
+}
+
+.post-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 38px;
+  margin-top: 18px;
+  color: var(--accent);
+  font-weight: 800;
+}
+
+.post-link:hover {
+  color: var(--text);
+}
+
+.post-page {
+  max-width: 860px;
+}
+
+.post-body {
+  padding: 30px;
+}
+
+.post-body h2 {
+  margin: 28px 0 8px;
+  font-size: 1.25rem;
+}
+
+.post-body p,
+.post-body li {
+  color: var(--muted);
+}
+
+.post-body ul {
+  margin: 10px 0 0;
+  padding-left: 22px;
+}
+
+.post-body li + li {
+  margin-top: 8px;
+}
+
+.post-body .button {
+  margin-top: 28px;
+}
+
 .empty-posts {
   margin: 0;
   padding: 18px 20px;
